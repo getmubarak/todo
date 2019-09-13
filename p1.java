@@ -1,6 +1,6 @@
 package problem1;
 
-class InvalidStateException extends Exception{
+class InvalidStateException extends RuntimeException{
 }
 
 interface State
@@ -16,19 +16,19 @@ class Idle implements State
 		//logic
 	}
 	void stop(){
-		throws new InvalidStateException();
+		throw new InvalidStateException();
 	}
 	void pause(){
-		throws new InvalidStateException();
+		throw new InvalidStateException();
 	}
 	void resume(){
-		throws new InvalidStateException();
+		throw new InvalidStateException();
 	}
 }
 class Running implements State
 {
 	public void start(){
-		throws new InvalidStateException();
+		throw new InvalidStateException();
 	}
 	void stop(){
 		//logic
@@ -37,19 +37,19 @@ class Running implements State
 		//logic
 	}
 	void resume(){
-		throws new InvalidStateException();
+		throw new InvalidStateException();
 	}
 }
 class Suspended implements State
 {
 	public void start() { 
-		throws new InvalidStateException();
+		throw new InvalidStateException();
 	}
 	void stop(){
 		//logic
 	}
 	void pause(){
-		throws new InvalidStateException();
+		throw new InvalidStateException();
 	}
 	void resume(){
 		//logic
