@@ -2,38 +2,34 @@ class Account
 {
      public abstract withdraw(double amount);
      public abstract deposit(double amount);
-     
-     public void Save();
 }
-
 class SA extends Account
 {
-    public void Save()
-    {
-      //logic
-    }
-     public withdraw(double amount)
-     {
+     public withdraw(double amount){
         //logic
      }
-     public deposit(double amount)
-     {
+     public deposit(double amount){
         //logic
      }
 }
-
-class CA extends Account
+class SADao
 {
-    public void Save()
-    {
+    public void Save(){
       //logic
     }
-     public withdraw(double amount)
-     {
+}
+class CA extends Account
+{
+     public withdraw(double amount){
         //logic
      }
-     public deposit(double amount)
-     {
+     public deposit(double amount){
         //logic
      }
+}
+class CADoa
+{
+    public void Save(){
+      //logic
+    }
 }
