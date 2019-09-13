@@ -1,4 +1,18 @@
 package problem3;
+interface Connection
+{
+	void Open();
+	void Close();
+}
+interface Command
+{
+	void exe();
+}
+interface Transaction
+{
+	void Begin();
+	void Commit();
+}
 interface Factory
 {
 	 Connection getCon();
